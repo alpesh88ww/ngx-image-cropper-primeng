@@ -1,0 +1,166 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/primeng/resources/primeng.min.css';
+@import '../node_modules/primeflex/primeflex.scss';
+@import '../node_modules/primeicons/primeicons.css';
+
+.layout-light {
+  --primary-color-default: var(--primary-600);
+  --primary-color-inverse-default: var(--surface-0);
+  --topbar-sticky-bg: rgba(255, 255, 255, 0.7);
+  --card-border: 1px solid var(--surface-border);
+  --card-bg: var(--surface-card);
+  --glow-image: url(https://www.primefaces.org/cdn/primeng/images/layout/pattern.png);
+  --glow-blend: hard-light, multiply;
+  --topbar-border: rgba(0, 0, 0, 0.05);
+  --mobile-menu-bg: var(--surface-overlay);
+  --demo-code-bg: var(--surface-800);
+  --demo-code-button-color: var(--surface-300);
+  --demo-code-button-hover-bg: rgba(255, 255, 255, 0.1);
+  --demo-code-button-hover-color: var(--surface-100);
+  --doc-highlight-text-bg: var(--surface-200);
+  --doc-highlight-text-color: var(--surface-700);
+}
+.layout-wrapper {
+  background-image: var(--glow-image);
+  background-blend-mode: var(--glow-blend);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 20rem;
+}
+@media screen and (min-width: 1920px) {
+  .layout-content,
+  .layout-topbar-inner,
+  .layout-footer {
+    max-width: 1728px;
+    margin: 0 auto;
+  }
+}
+
+.layout-content {
+  padding: 6rem 4rem;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.p-button {
+  &.p-button-sm {
+    font-size: 0.875rem;
+    padding: 0.522625rem 0.65625rem;
+  }
+}
+
+.p-inputgroup-sm {
+  .p-inputgroup-addon {
+    padding: 0.3rem 0.5rem;
+    > div {
+      margin-bottom: 0;
+    }
+  }
+  .p-inputtext {
+    padding: 0.3rem 0.75rem;
+  }
+  .p-dropdown {
+    width: auto;
+  }
+}
+.p-fileupload.p-fileupload-basic {
+  .p-button-sm.border-noround-right.float-left {
+    height: 30px;
+  }
+}
+
+.p-dialog {
+  .p-dialog-header {
+    padding: 0.6rem 1rem;
+    color: var(--surface-900);
+    background: var(--surface-100);
+
+    .p-dialog-header-icon {
+      background: var(--surface-100);
+    }
+  }
+
+  &.primary,
+  &.success,
+  &.warning,
+  &.info,
+  &.danger {
+    .p-dialog-header {
+      color: var(--surface-0);
+
+      .p-dialog-header-icon {
+        background: var(--surface-0);
+      }
+    }
+  }
+
+  &.primary {
+    .p-dialog-header {
+      background: var(--primary-600);
+
+      .p-dialog-header-icon {
+        color: var(--primary-600);
+      }
+    }
+  }
+
+  &.success {
+    .p-dialog-header {
+      background: var(--green-600);
+
+      .p-dialog-header-icon {
+        color: var(--green-600);
+      }
+    }
+  }
+
+  &.warning {
+    .p-dialog-header {
+      background: var(--orange-600);
+
+      .p-dialog-header-icon {
+        color: var(--orange-600);
+      }
+    }
+  }
+
+  &.info {
+    .p-dialog-header {
+      background: var(--purple-600);
+
+      .p-dialog-header-icon {
+        color: var(--purple-600);
+      }
+    }
+  }
+
+  &.danger {
+    .p-dialog-header {
+      background: var(--red-600);
+
+      .p-dialog-header-icon {
+        color: var(--red-600);
+      }
+    }
+  }
+
+  .p-dialog-content {
+    padding: 0.8rem 1rem;
+  }
+
+  .p-dialog-footer {
+    background: var(--surface-100);
+    padding: 0.8rem 1rem;
+  }
+}
